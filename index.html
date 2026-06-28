@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos na página</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Eventos na página com mouse.</h1>
+
+        <button onclick="mudarCor()">Mudar cor do fundo.</button>
+
+        <p id="texto" ondblclick="esconderTexto()">
+            Clique duas vezes no texto para uma mágica acontecer!
+        </p>
+
+        <button onclick="iniciarRelogio()">
+            Mostrar data e hora.
+        </button>
+
+        <p id="dataHora"></p>
+        <p>Clique na imagem pra trocá-la.</p>
+        <img id="imagem" src="riki.jpg" alt="Riki" onclick="trocarImagem()">
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
